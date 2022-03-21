@@ -30,13 +30,18 @@ jobs:
         path: |
           **/node_modules
         key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
-
+        
+    - name: Build
+      run: tree .
+        
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd Web/webtest
+        npm install
 
     - name: Build
       run: |
-        cd Web 
+        cd Web/webtest
         npm run build
 
     - name: Deploy
