@@ -22,7 +22,7 @@ const App = () => {
   const isDark = colorMode === "dark";
 
   const fetchAPI = (photo, album, email, limitv, offsetv) => {
-    let urlAPI = `http://localhost:8081/api/photos?${photo}${album}${email}${limitv}${offsetv}`;
+    let urlAPI = `${process.env.REACT_APP_API_URL}${photo}${album}${email}${limitv}${offsetv}`;
     fetch(urlAPI)
       .then((response) => response.json())
       .then((json) => {
