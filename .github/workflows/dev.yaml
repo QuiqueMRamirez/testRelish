@@ -16,10 +16,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-      - run: npm install
-      - run: npm run test:ci
-        env:
-          CI: true
       - name: Generate environment variables file
         run: node generate-vars.js "${{ secrets.ENV_VARIABLES }}"
       - name: Initialize Google Cloud SDK & Deploy
