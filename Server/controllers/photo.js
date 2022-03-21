@@ -58,9 +58,8 @@ const photoGetInformation = async (req = request, res = response) => {
     limit = 25,
     offset = 0
   } = req.query;
-
   const data = await requestInfoAxios(albumTitle,albumUserEmail,title);
-  res.json(data.slice(parseInt(offset, 10), parseInt(offset, 10)+parseInt(limit, 10)));
+  if(data) res.json(data.slice(parseInt(offset, 10), parseInt(offset, 10)+parseInt(limit, 10)));
 };
 
 module.exports = {
