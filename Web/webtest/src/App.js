@@ -7,7 +7,6 @@ import {
   Flex,
   Stack,
   useColorMode,
-  Heading,
   HStack,
   useColorModeValue,
 } from "@chakra-ui/react";
