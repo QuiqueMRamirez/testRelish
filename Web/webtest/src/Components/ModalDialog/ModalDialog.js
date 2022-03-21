@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import {
   Modal,
   ModalOverlay,
@@ -10,11 +10,7 @@ import {
   Button,
   Box,
   Heading,
-  keyframes,
   Text,
-  Icon,
-  Divider,
-  useToast,
 } from "@chakra-ui/react";
 
 const ModalDialog = ({ onOpen, isOpen, onClose, modalElement }) => {

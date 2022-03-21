@@ -89,7 +89,7 @@ const ListCards = ({ elements }) => {
             </WrapItem>
           ) : null
         )}
-        {elementSelected && elementSelected.length > 0 ? <ModalDialog
+        {elementSelected && elementSelected.album ? <ModalDialog
           onOpen={onOpen}
           isOpen={isOpen}
           onClose={onClose}

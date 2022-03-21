@@ -60,6 +60,7 @@ const photoGetInformation = async (req = request, res = response) => {
   } = req.query;
   const data = await requestInfoAxios(albumTitle,albumUserEmail,title);
   if(data) res.json(data.slice(parseInt(offset, 10), parseInt(offset, 10)+parseInt(limit, 10)));
+  //res.json(data)
 };
 
 module.exports = {
