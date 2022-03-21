@@ -1,6 +1,6 @@
 {
   "name": "webtest",
-  "homepage": "https://quiquemramirez.github.io/testrealish",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
