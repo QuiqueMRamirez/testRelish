@@ -1,3 +1,2 @@
 runtime: nodejs16
-env: flex
 instance_class: F2
