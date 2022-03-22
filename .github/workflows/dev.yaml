@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - run: npm install
+        env:
+          CI: true
       - name: Initialize Google Cloud SDK & Deploy
         uses: etereo-io/deploy-gae-action@master
         with:
