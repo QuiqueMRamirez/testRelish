@@ -5,7 +5,7 @@ class Server {
 
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = 8081;
 
         this.photosPath = '/api/photos';
         this.middlewares();
